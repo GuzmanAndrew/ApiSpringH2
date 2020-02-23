@@ -1,0 +1,29 @@
+<div class="col-md-4 offset-md-4" style="margin-top: 40px;">
+  <div class="card">
+    <div class="card-body">
+      <form>
+        <div class="form-group">
+          <input type="text" name="nombre" [(ngModel)]="persona.nombre" placeholder="Nombres" class="form-control" autofocus>
+        </div>
+        <div class="form-group">
+          <input type="text" name="apellidos" [(ngModel)]="persona.apellido" placeholder="Apellidos" class="form-control">
+        </div>
+        <div class="form-group">
+          <input type="text" name="direccion" [(ngModel)]="persona.direccion" placeholder="Dirección" class="form-control">
+        </div>
+        <div class="form-group">
+          <input type="text" name="procesado" [(ngModel)]="persona.procesado" placeholder="Procesado" class="form-control">
+        </div>
+        <div class="form-group">
+          <input type="text" name="dni" [(ngModel)]="persona.dni" placeholder="Dni" class="form-control">
+        </div>
+        <div class="form-group">
+          <input type="text" name="fecha" [(ngModel)]="persona.fecha" placeholder="formato fecha: AAAA-MM-DD" class="form-control">
+        </div>
+        <button class="btn btn-success btn-block" (click)="edit ? updatePerson() : savePerson()">
+          Guardar
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -171,3 +171,15 @@ Wrong user name or password [28000-200]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:461)
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
 	... 63 more
+2020-02-22 19:53:05 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "PERSONA[*]"; se esperaba "PREPARE"
+Syntax error in SQL statement "PERSONA[*]"; expected "PREPARE"; SQL statement:
+PERSONA [42001-200]
+2020-02-22 21:05:46 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Conversión de datos fallida, convirtiendo "'12345687965' (PERSONA: ""DNI"" INTEGER)"
+Data conversion error converting "'12345687965' (PERSONA: ""DNI"" INTEGER)"; SQL statement:
+INSERT INTO "PUBLIC"."PERSONA"("ID","APELLIDO","DIRECCION","DNI","FECHA","NOMBRE","PROCESADO")VALUES(?,?,?,?,?,?,?) [22018-200]
+2020-02-22 21:05:46 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Conversión de datos fallida, convirtiendo "'12345687965' (PERSONA: ""DNI"" INTEGER)"
+Data conversion error converting "'12345687965' (PERSONA: ""DNI"" INTEGER)"; SQL statement:
+INSERT INTO "PUBLIC"."PERSONA"("ID","APELLIDO","DIRECCION","DNI","FECHA","NOMBRE","PROCESADO")VALUES(?,?,?,?,?,?,?) [22018-200]

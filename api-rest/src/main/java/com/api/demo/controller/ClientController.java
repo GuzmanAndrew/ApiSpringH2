@@ -3,6 +3,7 @@ package com.api.demo.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,10 +16,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.api.demo.db.Cliente;
 import com.api.demo.service.ClienteServiveImp;
 
-import ch.qos.logback.core.net.server.Client;
-
 @RestController
 @RequestMapping("/api")
+@CrossOrigin
 public class ClientController {
 	
 	@Autowired

@@ -28,6 +28,9 @@ public class Cliente {
 	@Column(name = "direccion")
 	private String direccion;
 	
+	@Column(name = "procesado")
+	private String procesado;
+	
 	@Column(name = "dni")
 	private int dni;
 	
@@ -38,11 +41,12 @@ public class Cliente {
 	
 	}
 
-	public Cliente(Long id, String nombre, String apellido, String direccion, int dni, Date fecha) {
+	public Cliente(Long id, String nombre, String apellido, String direccion, String procesado, int dni, Date fecha) {
 		this.id = id;
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.direccion = direccion;
+		this.procesado = procesado;
 		this.dni = dni;
 		this.fecha = fecha;
 	}
@@ -79,6 +83,14 @@ public class Cliente {
 		this.direccion = direccion;
 	}
 
+	public String getProcesado() {
+		return procesado;
+	}
+
+	public void setProcesado(String procesado) {
+		this.procesado = procesado;
+	}
+	
 	public int getDni() {
 		return dni;
 	}
